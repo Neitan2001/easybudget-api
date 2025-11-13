@@ -29,3 +29,30 @@ Content-Type: application/json
     "email": "teste@email.com",
     "password": "123"
 }
+
+### 4. Fazer Login
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "natan@email.com",
+    "password": "password123"
+}
+
+### 5. Fazer Login (FALHA - senha incorreta)
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "natan@email.com",
+    "password": "password123456"
+}
+
+### 6. Fazer Login (FALHA - email inexistente)
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "natasdsdan@email.com",
+    "password": "password123456"
+}

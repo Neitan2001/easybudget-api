@@ -4,3 +4,6 @@ spring.datasource.password=COLOQUE_A_SENHA_AQUI
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+easybudget.jwt.secret=SUA_CHAVE_SECRETA_LONGA_E_SEGURA_EM_BASE_64
+easybudget.jwt.expiration-ms=86400000
