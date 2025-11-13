@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  easybudget-db:
+    image: postgres:15-alpine
+
+    container_name: easybudget_postgres_db
+
+    environment:
+      POSTGRES_USER: easybudget_user
+      POSTGRES_PASSWORD: easybudget_pass
+      POSTGRES_DB: easybudget_db
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - easybudget_db_data:/var/lib/postgresql/data
+
+volumes:
+  easybudget_db_data:

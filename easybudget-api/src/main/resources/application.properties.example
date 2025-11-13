@@ -1,0 +1,6 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/easybudget_db
+spring.datasource.username=COLOQUE_O_USUARIO_AQUI
+spring.datasource.password=COLOQUE_A_SENHA_AQUI
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
